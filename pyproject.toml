@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qc-assert"
+version = "0.1.0"
+description = "Simple quantum circuit assertions for CI (Qiskit simulator)."
+requires-python = ">=3.10"
+dependencies = ["qiskit>=2.0"]

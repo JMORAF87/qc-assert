@@ -1,18 +1,28 @@
-![tests](https://github.com/JMORAF87/qc-assert/actions/workflows/tests.yml/badge.svg)
-![python](https://img.shields.io/badge/python-3.11%2B-blue)
-
 # qc-assert
 
-Simple quantum circuit assertions for CI (Qiskit simulator).
+Pytest-friendly unit test helpers for **Qiskit** quantum circuits — designed for **CI** (GitHub Actions) and regression testing.
+
+![tests](https://github.com/JMORAF87/qc-assert/actions/workflows/tests.yml/badge.svg)
+
+---
+
+## Why this exists
+
+Quantum code breaks in sneaky ways:
+- SDK upgrades change behavior
+- circuits drift from “correct” distributions
+- notebook experiments don’t translate to production quality
+
+**qc-assert** gives you small, focused assertions so you can:
+- catch regressions early (before hardware runs)
+- test probabilistic outputs with tolerances
+- validate entanglement patterns (Bell/GHZ) reliably
+- run everything in standard CI with `pytest`
+
+---
 
 ## Install (dev)
+
+```bash
 pip install -e .
 pip install pytest
-
-## Run tests
-pytest -q
-
-## Example
-Use assertions like:
-- assert_only(counts, {"00","11"})
-- assert_prob_close(counts, "00", 0.5, tol=0.1)

@@ -27,7 +27,6 @@ Quantum code breaks in sneaky ways:
 pip install -e .
 pip install pytest
 
-```md
 ---
 
 ## Quick example (Bell state test)

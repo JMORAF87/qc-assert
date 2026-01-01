@@ -27,11 +27,3 @@ Quantum code breaks in sneaky ways:
 pip install -e .
 pip install pytest
 
----
-
-## Quick example (Bell state test)
-
-Run it locally:
-
-```bash
-python examples/bell_test.py

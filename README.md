@@ -1,3 +1,6 @@
+![tests](https://github.com/JMORAF87/qc-assert/actions/workflows/tests.yml/badge.svg)
+![python](https://img.shields.io/badge/python-3.11%2B-blue)
+
 # qc-assert
 
 Simple quantum circuit assertions for CI (Qiskit simulator).
